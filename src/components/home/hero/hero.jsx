@@ -196,7 +196,7 @@ export default function SimplifiedHeroSection() {
               <div className="relative">
                 <TypewriterText
                   text="Shams Ali"
-                  className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight tracking-tight"
+                  className="text-4xl sm:text-6xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight tracking-tight"
                   delay={1.2}
                 />
                 <motion.div

@@ -5,28 +5,20 @@ import { motion } from "framer-motion";
 const experienceData = [
   {
     id: 1,
-    company: "Nexcore Alliance LLP",
-    role: "Project Manager",
-    year: "2025 - Present",
+    company: "Nexcore Alliance",
+    role: "Associate Project Manager & Full Stack Developer",
+    year: "Mar 2024 - Present",
     description:
-      "Led international projects, managing cross-functional teams to deliver scalable solutions. Oversaw the Exam Portal development, optimizing UI/UX, workflows, and DevOps for seamless deployment. Ensured stakeholder alignment and on-time delivery.",
+      "Developed and deployed 15+ production MERN stack applications serving 50K+ users. Designed AWS EC2 cloud infrastructure using Nginx reverse proxy, load balancing, and high availability architecture. Implemented CI/CD pipelines with GitHub Actions and Jenkins, monitoring using Prometheus and Grafana, and optimized database performance with Redis caching improving API response time by 70%. Led development teams, coordinated sprint planning, and ensured successful Agile project delivery."
   },
   {
     id: 2,
-    company: "Nexcore Alliance LLP",
-    role: "Mern Stack Developer || DevOps Engineer",
-    year: "2024 - Present",
+    company: "ISRC.ORG.IN",
+    role: "Web Development Intern",
+    year: "Jan 2024 - Mar 2024",
     description:
-      "Contributed to various international projects, leveraging the MERN stack to build scalable and high-performance applications. Led the development of an Exam Portal, focusing on responsive UI/UX enhancements, API optimizations, and DevOps integrations for seamless deployment and scalability.",
-  },
-  {
-    id: 4,
-    company: "ISRC",
-    role: "Web Developer Intern",
-    year: "2024 - 2024",
-    description:
-      "Developed various projects using Next.js, Tailwind CSS, and Node.js, focusing on responsive and dynamic web applications.",
-  },
+      "Developed full-stack web applications using MERN stack with Firebase integration serving 5K+ active users. Configured Linux production environments with Nginx and SSL certificates, automated backups, and optimized application performance improving page load time by 45%. Collaborated in Agile sprints to build REST APIs, integrate third-party services, and implement real-time features using WebSocket."
+  }
 ];
 
 const Experience = () => {

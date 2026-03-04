@@ -23,7 +23,7 @@ const ContactCard = () => {
     {
       id: "whatsapp",
       icon: FaWhatsapp,
-      url: "https://wa.me/917385841171",
+      url: "https://wa.me/919226539203",
       color: "text-green-400",
       hoverBg: "bg-green-500",
       label: "WhatsApp",
@@ -31,7 +31,7 @@ const ContactCard = () => {
     {
       id: "linkedin",
       icon: FaLinkedin,
-      url: "https://www.linkedin.com/in/shams-ali-shaikh-27194425a",
+      url: "https://linkedin.com/in/shams-ali-shaikh-27194425a",
       color: "text-blue-400",
       hoverBg: "bg-blue-500",
       label: "LinkedIn",
@@ -39,7 +39,7 @@ const ContactCard = () => {
     {
       id: "github",
       icon: FaGithub,
-      url: "https://github.com/Shaikhshams17",
+      url: "https://github.com/dev-shamsali",
       color: "text-purple-400",
       hoverBg: "bg-purple-500",
       label: "GitHub",
@@ -57,25 +57,25 @@ const ContactCard = () => {
   const contactInfo = [
     {
       icon: FaEnvelope,
-      content: "shaikhshams59@gmail.com",
+      content: "dev.shamsali@gmail.com",
       isLink: true,
-      url: "mailto:shaikhshams59@gmail.com",
+      url: "mailto:dev.shamsali@gmail.com",
       color: "text-indigo-300",
       label: "Email",
     },
     {
       icon: FaPhone,
-      content: "+91 7385841171",
+      content: "+91 9226539203",
       isLink: false,
       color: "text-blue-300",
       label: "Phone",
     },
     {
       icon: FaMapMarkerAlt,
-      content: "Lower Parel, Mumbai",
+      content: "Mumbai, Maharashtra, India",
       isLink: false,
       color: "text-purple-300",
-      label: "Address",
+      label: "Location",
     },
   ];
 
@@ -114,7 +114,8 @@ const ContactCard = () => {
                 </h2>
                 <div className="w-20 h-1.5 bg-purple-500 rounded-full mb-4" />
                 <p className="text-indigo-100 text-base sm:text-lg leading-relaxed">
-                  Have questions, opportunities, or feedback? I'd love to hear from you and discuss how we can collaborate.
+                  Have questions, opportunities, or feedback? I'd love to hear
+                  from you and discuss how we can collaborate.
                 </p>
               </div>
 
@@ -153,6 +154,7 @@ const ContactCard = () => {
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-4">
                 Connect with me
               </h3>
+
               <div className="flex flex-wrap gap-3 sm:gap-4 justify-start">
                 {socialLinks.map((social) => (
                   <Link
@@ -165,11 +167,14 @@ const ContactCard = () => {
                   >
                     <span
                       className={`absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-white opacity-0 transition-all duration-300 whitespace-nowrap ${
-                        hoveredIcon === social.id ? "opacity-100 -bottom-4" : ""
+                        hoveredIcon === social.id
+                          ? "opacity-100 -bottom-4"
+                          : ""
                       }`}
                     >
                       {social.label}
                     </span>
+
                     <div
                       className={`w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-2xl border border-indigo-500/30 backdrop-blur-sm transition-all duration-500 ${
                         hoveredIcon === social.id
@@ -204,8 +209,10 @@ const ContactCard = () => {
 
             <div className="relative z-10 w-full max-w-sm mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 rounded-3xl blur-md transform -rotate-3 scale-105" />
+
               <div className="relative bg-white/5 p-2 sm:p-4 rounded-3xl border border-indigo-500/30 shadow-2xl backdrop-blur-sm overflow-hidden">
                 <div className="w-full h-2 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-t-xl mb-2" />
+
                 <div className="relative rounded-2xl overflow-hidden bg-black/20 aspect-square flex items-center justify-center">
                   <img
                     src="/contact.gif"
@@ -215,6 +222,7 @@ const ContactCard = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-purple-900/30 to-transparent" />
                 </div>
+
                 <div className="flex justify-center gap-1 mt-3 mb-1">
                   <div className="w-1.5 h-1.5 rounded-full bg-indigo-400" />
                   <div className="w-1.5 h-1.5 rounded-full bg-purple-400" />
