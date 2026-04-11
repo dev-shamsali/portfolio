@@ -1,15 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import ClientProtection from "@/components/layout/ClientProtection"; // path may vary
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -35,7 +31,7 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${robotoMono.variable} antialiased`}>
         <ClientProtection />
         {children}
       </body>

@@ -10,7 +10,7 @@ const HeroBanner = () => {
         className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
-        <h1 className="text-6xl font-bold text-red-600">Contact Me</h1>
+        <h1 className="text-6xl font-bold text-[#4d80e4]">Contact Me</h1>
       </div>
     </div>
   );

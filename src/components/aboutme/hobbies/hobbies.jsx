@@ -13,17 +13,17 @@ const hobbies = [
 
 const Hobbies = () => {
   return (
-    <div className="py-10 bg-gradient-to-b from-black to-gray-600 min-h-screen">
+    <div className="py-10 bg-gradient-to-b from-black to-[#040d1a] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center text-white mb-10">
           Hobbies/ Things I like
         </h2>
         <div className="flex flex-col items-center">
-          <ul className="w-full max-w-3xl bg-gray-800 rounded-2xl shadow-xl p-6">
+          <ul className="w-full max-w-3xl bg-[#001f5b]/20 rounded-2xl shadow-xl p-6">
             {hobbies.map((hobby, index) => (
               <li
                 key={index}
-                className="bg-red-600 text-white text-lg font-medium py-3 px-5 rounded-xl mb-3 last:mb-0 hover:scale-105 transition-transform duration-300"
+                className="bg-[#001f5b] text-white text-lg font-medium py-3 px-5 rounded-xl mb-3 last:mb-0 hover:scale-105 transition-transform duration-300"
               >
                 {hobby}
               </li>

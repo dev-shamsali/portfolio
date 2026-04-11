@@ -61,11 +61,11 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-indigo-950 to-purple-900 py-16 md:py-0 min-h-screen flex items-center justify-center">
+    <section className="relative overflow-hidden bg-gradient-to-br from-black via-[#000d1f] to-[#001230] py-16 md:py-0 min-h-screen flex items-center justify-center">
       {/* Particle/Blob effects */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-indigo-600/10 filter blur-3xl mix-blend-overlay"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-purple-600/10 filter blur-3xl mix-blend-overlay"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-[#001f5b]/10 filter blur-3xl mix-blend-overlay"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-[#001f5b]/08 filter blur-3xl mix-blend-overlay"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-radial from-violet-800/5 to-transparent"></div>
       </div>
       
@@ -83,7 +83,7 @@ const Hero = () => {
           priority
           className="opacity-20 mix-blend-overlay"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-indigo-900/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-[#001f5b]/40 to-transparent"></div>
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 py-12 flex flex-col md:flex-row items-center justify-between">
@@ -95,10 +95,10 @@ const Hero = () => {
           animate="visible"
         >
           <motion.div 
-            className="inline-block mb-3 px-4 py-1.5 rounded-full bg-indigo-900/50 border border-indigo-500/20 backdrop-blur-sm"
+            className="inline-block mb-3 px-4 py-1.5 rounded-full bg-[#001f5b]/50 border border-[#4d80e4]/20 backdrop-blur-sm"
             variants={itemVariants}
           >
-            <span className="text-indigo-300 text-sm font-medium">Mern Stack Developer || DevOps Engineer</span>
+            <span className="text-[#7aa8f0] text-sm font-medium">Mern Stack Developer || DevOps Engineer</span>
           </motion.div>
           
           <motion.h1 
@@ -106,7 +106,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             Hello, I'm{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4d80e4] to-[#7aa8f0]">
               Shams Ali Shaikh
             </span>
           </motion.h1>
@@ -141,7 +141,7 @@ const Hero = () => {
           >
             <motion.a
               href="/contact"
-              className="px-8 py-3 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium flex items-center gap-2 hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-300"
+              className="px-8 py-3 rounded-lg bg-gradient-to-r from-[#001f5b] to-[#0a2d7a] text-white font-medium flex items-center gap-2 hover:shadow-lg hover:shadow-[#001f5b]/20 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -173,7 +173,7 @@ const Hero = () => {
           <div className="relative">
             {/* Decorative elements */}
             <motion.div 
-              className="absolute -z-10 w-80 h-80 rounded-full bg-gradient-to-r from-indigo-600/20 to-purple-600/20 filter blur-2xl"
+              className="absolute -z-10 w-80 h-80 rounded-full bg-gradient-to-r from-[#001f5b]/20 to-[#0a2d7a]/20 filter blur-2xl"
               animate={{
                 scale: [1, 1.05, 1],
                 opacity: [0.5, 0.8, 0.5],
@@ -193,9 +193,9 @@ const Hero = () => {
             {/* Profile image container */}
             <div className="relative">
               {/* Rotating border effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 p-1 -m-1 blur-sm animate-spin-slow"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#001f5b] to-[#0a2d7a] p-1 -m-1 blur-sm animate-spin-slow"></div>
               
-              <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full border-2 border-indigo-500/30 overflow-hidden shadow-2xl shadow-indigo-500/20 backdrop-blur-sm bg-indigo-900/20">
+              <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full border-2 border-[#4d80e4]/30 overflow-hidden shadow-2xl shadow-[#001f5b]/20 backdrop-blur-sm bg-[#001f5b]/20">
                 <Image
                   src="/shamsali.jpeg" 
                   alt="Shams Ali Shaikh"
@@ -213,7 +213,7 @@ const Hero = () => {
             
             {/* Small decorative circles */}
             <motion.div 
-              className="absolute -bottom-4 -left-4 w-20 h-20 rounded-full bg-indigo-600/30 border border-indigo-500/30 backdrop-blur-sm"
+              className="absolute -bottom-4 -left-4 w-20 h-20 rounded-full bg-[#001f5b]/30 border border-[#4d80e4]/30 backdrop-blur-sm"
               animate={{
                 y: [0, -10, 0],
                 opacity: [0.7, 1, 0.7],
@@ -230,7 +230,7 @@ const Hero = () => {
             />
             
             <motion.div 
-              className="absolute -top-6 -right-6 w-16 h-16 rounded-full bg-purple-600/30 border border-purple-500/30 backdrop-blur-sm"
+              className="absolute -top-6 -right-6 w-16 h-16 rounded-full bg-[#001f5b]/20 border border-[#4d80e4]/20 backdrop-blur-sm"
               animate={{
                 y: [0, 10, 0],
                 opacity: [0.5, 0.8, 0.5],
@@ -251,10 +251,10 @@ const Hero = () => {
       </div>
       
       {/* Code-inspired decorations */}
-      <div className="absolute bottom-8 left-8 text-indigo-500/30 font-mono text-xs hidden md:block">
+      <div className="absolute bottom-8 left-8 text-[#4d80e4]/30 font-mono text-xs hidden md:block">
         &lt;hero&gt;
       </div>
-      <div className="absolute bottom-4 left-8 text-indigo-500/30 font-mono text-xs hidden md:block">
+      <div className="absolute bottom-4 left-8 text-[#4d80e4]/30 font-mono text-xs hidden md:block">
         &lt;/hero&gt;
       </div>
     </section>

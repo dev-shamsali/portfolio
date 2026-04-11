@@ -47,7 +47,7 @@ const educationData = [
 
 const Education = () => {
   return (
-    <section className="py-24 bg-gray-800 relative overflow-hidden">
+    <section className="py-24 bg-black relative overflow-hidden">
       {/* Floating tech elements */}
       <div className="absolute inset-0 opacity-5">
         {[...Array(15)].map((_, i) => (
