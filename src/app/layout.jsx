@@ -1,6 +1,7 @@
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import ClientProtection from "@/components/layout/ClientProtection"; // path may vary
+import { Analytics } from "@vercel/analytics/next";
 
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       <body className={`${robotoMono.variable} antialiased`}>
         <ClientProtection />
         {children}
+        <Analytics />
       </body>
     </html>
   );
